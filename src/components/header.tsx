@@ -12,7 +12,7 @@ export function Header() {
   }
 
   return (
-    <header className="w-full shadow-lg fixed top-0 left-0 bg-bg">
+    <header className="z-20 w-full shadow-lg fixed top-0 left-0 bg-bg">
       <div className="max-w-7xl mx-auto w-full flex flex-col p-4">
         <div className="w-full flex justify-between items-center">
           <div>Solar Fácil</div>

@@ -22,9 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <Header />
-      <body className={`${inter.className} antialiased`}>{children}</body>
-      <Footer />
+      <body className={`${inter.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
