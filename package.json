@@ -2,6 +2,10 @@
   "name": "solar-facil",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Lucas Galdino",
+    "url": "https://github.com/lucasfgaldinos"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
