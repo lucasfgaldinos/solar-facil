@@ -1,3 +1,4 @@
+import { About } from "@/sections/about";
 import { Hero } from "@/sections/hero";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <div>
       <main className="pt-16">
         <Hero />
+        <About />
       </main>
     </div>
   );
