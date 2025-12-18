@@ -6,7 +6,7 @@ import { Title } from "@/components/title";
 
 export function About() {
   return (
-    <Section>
+    <Section bgColor="secondary">
       <Title>Sobre Nós</Title>
 
       <p className="my-6 text-center max-w-3xl mx-auto md:text-lg">
