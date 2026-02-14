@@ -1,4 +1,5 @@
 import { About } from "@/sections/about";
+import { Benefits } from "@/sections/benefits";
 import { Hero } from "@/sections/hero";
 import { MissionAndValues } from "@/sections/mission-and-values";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <About />
         <MissionAndValues />
+        <Benefits />
       </main>
     </div>
   );
