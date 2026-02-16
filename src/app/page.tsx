@@ -1,3 +1,4 @@
+import { CallToAction } from "@/components/callToAction";
 import { About } from "@/sections/about";
 import { Benefits } from "@/sections/benefits";
 import { Hero } from "@/sections/hero";
@@ -13,6 +14,10 @@ export default function Home() {
         <MissionAndValues />
         <Benefits />
         <Services />
+        <CallToAction
+          title="Pronto para começar a economizar?"
+          description="Solicite um orçamento e descubra o potencial da energia solar para você."
+        />
       </main>
     </div>
   );
