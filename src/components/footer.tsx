@@ -1,5 +1,7 @@
 "use client";
 import { FacebookLogoIcon, InstagramLogoIcon } from "@phosphor-icons/react";
+import Image from "next/image";
+import logo from "@/assets/logo.png";
 import { HeaderLink } from "./header-link";
 
 export function Footer() {
@@ -10,7 +12,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto w-full">
         <div className="pb-8 flex flex-wrap gap-10 justify-between">
           <div className="max-w-64">
-            <p className="font-bold text-bg mb-3">Solar Fácil</p>
+            <Image
+              width={85}
+              className="h-auto"
+              src={logo}
+              alt="Logo Solar Fácil"
+            />
             <p className="text-gray text-sm font-medium">
               Sua parceira em energia limpa e renovável. Economize e ajude o
               planeta.

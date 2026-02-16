@@ -1,6 +1,8 @@
 "use client";
 import { ListIcon } from "@phosphor-icons/react";
+import Image from "next/image";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 import { Button } from "./button";
 import { HeaderLink } from "./header-link";
 
@@ -13,9 +15,14 @@ export function Header() {
 
   return (
     <header className="z-20 w-full shadow-lg fixed top-0 left-0 bg-bg">
-      <div className="max-w-7xl mx-auto w-full flex flex-col p-4">
+      <div className="max-w-7xl mx-auto w-full flex flex-col px-4">
         <div className="w-full flex justify-between items-center">
-          <div>Solar Fácil</div>
+          <Image
+            width={85}
+            className="h-auto"
+            src={logo}
+            alt="Logo Solar Fácil"
+          />
 
           <nav className="hidden md:flex gap-4">
             <HeaderLink>Home</HeaderLink>
