@@ -5,6 +5,7 @@ import { ContactUs } from "@/sections/contactUs";
 import { Hero } from "@/sections/hero";
 import { MissionAndValues } from "@/sections/mission-and-values";
 import { Services } from "@/sections/services";
+import { Steps } from "@/sections/steps";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <MissionAndValues />
         <Benefits />
         <Services />
+        <Steps />
         <CallToAction
           title="Pronto para começar a economizar?"
           description="Solicite um orçamento e descubra o potencial da energia solar para você."
