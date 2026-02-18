@@ -1,87 +1,120 @@
 "use client";
-import { FacebookLogoIcon, InstagramLogoIcon } from "@phosphor-icons/react";
+import {
+  ArrowSquareOutIcon,
+  FacebookLogoIcon,
+  type Icon,
+  InstagramLogoIcon,
+} from "@phosphor-icons/react";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
-import { HeaderLink } from "./header-link";
+
+type SocialCard = {
+  name: string;
+  username: string;
+  link: string;
+  icon: Icon;
+  gradient: string;
+};
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const socials: SocialCard[] = [
+    {
+      name: "Instagram",
+      username: "@solarfacil2023",
+      link: "https://www.instagram.com/solarfacil2023",
+      icon: InstagramLogoIcon,
+      gradient: "from-[#8a2be2] via-[#ff4fd8] to-[#ff7a00]",
+    },
+    {
+      name: "Facebook",
+      username: "@edemilson.araujo.alves.2025",
+      link: "https://www.facebook.com/edemilson.araujo.alves.2025",
+      icon: FacebookLogoIcon,
+      gradient: "from-[#1877F2] via-[#3b82f6] to-[#0ea5e9]",
+    },
+  ];
 
   return (
-    <footer className="bg-dark-bg w-full p-4 pb-0 md:p-10">
+    <footer className="bg-dark-bg w-full p-4 md:p-10">
       <div className="max-w-7xl mx-auto w-full">
-        <div className="pb-8 flex flex-wrap gap-10 justify-between">
-          <div className="max-w-64">
+        <div className="pb-12 block mx-auto w-fit">
+          <div className="max-w-84">
             <Image
-              width={85}
-              className="h-auto"
+              width={220}
+              className="h-auto mx-auto"
               src={logo}
               alt="Logo Solar Fácil"
             />
-            <p className="text-gray text-sm font-medium">
-              Sua parceira em energia limpa e renovável. Economize e ajude o
+            <p className="text-gray font-medium text-center">
+              Seu parceiro em energia limpa e renovável. Economize e ajude o
               planeta.
             </p>
           </div>
+        </div>
 
-          <div className="w-fit flex flex-col">
-            <p className="font-bold text-bg mb-3">Links Fáceis</p>
-            <HeaderLink variant="light">Home</HeaderLink>
-            <HeaderLink variant="light">Serviços</HeaderLink>
-            <HeaderLink variant="light">Sobre</HeaderLink>
-            <HeaderLink variant="light">Projetos</HeaderLink>
-            <HeaderLink variant="light">Depoimentos</HeaderLink>
-            <HeaderLink variant="light">Contato</HeaderLink>
-          </div>
+        <div className="pb-20 max-w-sm mx-auto">
+          <div className="flex flex-col gap-4">
+            {socials.map((social) => {
+              const Icon = social.icon;
 
-          {/* TODO Adicionar contatos do Mineiro aqui */}
-          <div className="max-w-64">
-            <p className="font-bold text-bg mb-3">Contato</p>
-            <div className="flex flex-col gap-2">
-              <p className="text-gray text-sm font-medium">
-                contato@solarfacil.com
-              </p>
-              <p className="text-gray text-sm font-medium">(11) 99999-8888</p>
-              <p className="text-gray text-sm font-medium">
-                Av. Principal, 123, Rio Pardo de Minas - MG
-              </p>
-            </div>
-          </div>
+              return (
+                <a
+                  key={social.name}
+                  href={social.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative flex items-center justify-between overflow-hidden rounded-2xl px-5 py-4 backdrop-blur-md transition shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_10px_30px_rgba(0,0,0,0.15)]"
+                >
+                  <div
+                    className={`absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-linear-to-r ${social.gradient}`}
+                  />
 
-          <div className="w-fit">
-            <p className="font-bold text-bg mb-3">Redes Sociais</p>
-            <div className="flex gap-4">
-              <a
-                className="w-8 h-8 active:scale-95 transition"
-                href="https://www.facebook.com/?locale=pt_BR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FacebookLogoIcon
-                  className="text-gray hover:text-primary"
-                  size={32}
-                  weight="fill"
-                />
-              </a>
-              <a
-                className="w-8 h-8 active:scale-95 transition"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <InstagramLogoIcon
-                  className="text-gray hover:text-primary"
-                  size={32}
-                  weight="fill"
-                />
-              </a>
-            </div>
+                  <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-dark-bg/40" />
+
+                  <div className="relative z-10 flex items-center gap-4">
+                    <div
+                      className={`flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br ${social.gradient}
+              `}
+                    >
+                      <div className="flex h-full w-full items-center justify-center rounded-xl bg-dark-bg/15">
+                        <Icon
+                          size={28}
+                          className="text-bg/80 group-hover:text-bg transition-colors"
+                          weight="fill"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col leading-tight">
+                      <span className="text-sm text-bg/80 group-hover:text-bg transition-colors">
+                        {social.username}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="relative z-10">
+                    <ArrowSquareOutIcon
+                      size={20}
+                      className="text-bg/80 transition-colors group-hover:text-bg"
+                    />
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
 
-        <div className="p-8 border-t border-gray">
-          <p className="text-center text-gray text-sm font-light">
-            &copy; {currentYear} Solar Fácil. Todos os direitos reservados.
+        <div>
+          <div
+            className="max-w-sm mx-auto w-full h-px mb-6 md:mb-10"
+            style={{
+              background:
+                "linear-gradient(90deg, #0000, var(--color-gray), #0000)",
+            }}
+          />
+          <p className="text-center text-gray text-xs">
+            &copy; {currentYear} - Solar Fácil. Todos os direitos reservados.
           </p>
         </div>
       </div>
