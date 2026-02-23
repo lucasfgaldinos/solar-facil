@@ -50,7 +50,7 @@ export function MissionAndValues() {
         </p>
       </div>
 
-      <div className="flex gap-4 pb-6">
+      <div className="flex gap-4 pb-6 flex-col lg:flex-row">
         {missionAndValuesData.length > 0 &&
           missionAndValuesData.map((item) => (
             <InfoCard

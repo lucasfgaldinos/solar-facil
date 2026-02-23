@@ -73,29 +73,40 @@ export function ImageCard({ img, title, description }: ImageCardProps) {
 
       {/* MODAL */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-          {/* BACKDROP */}
-          <div
-            className="absolute inset-0 bg-dark-bg/80 backdrop-blur-sm"
-            onClick={() => setOpen(false)}
-            aria-hidden="true"
-          />
-
-          {/* CONTEÚDO */}
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-dark-bg/80 backdrop-blur-sm p-4 sm:p-6">
           <div
             ref={modalRef}
             role="dialog"
             aria-modal="true"
+            aria-labelledby="image-modal-title"
             tabIndex={-1}
-            className="relative w-[90vw] max-w-5xl h-[85vh] outline-none"
+            className="relative outline-none"
           >
+            {/* BOTÃO FECHAR */}
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              aria-label="Fechar imagem"
+              className="
+              cursor-pointer absolute right-2 top-2 rounded p-2 bg-bg/10 backdrop-blur-md text-bg text-sm flex items-center justify-center hover:bg-bg/20 transition focus:outline-none focus:ring-2 focus:ring-bg/50"
+            >
+              ✕ Fechar
+            </button>
+
             <Image
               src={img}
               alt={title}
-              fill
-              sizes="90vw"
-              className="object-contain rounded-xl"
+              width={1600}
+              height={1000}
+              sizes="100vw"
+              className="w-full h-auto max-w-[95vw] max-h-[85vh] min-h-60 object-contain"
+              priority
             />
+
+            {/* Título acessível (invisível visualmente) */}
+            <span id="image-modal-title" className="sr-only">
+              {title}
+            </span>
           </div>
         </div>
       )}
