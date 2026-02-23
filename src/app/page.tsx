@@ -4,6 +4,7 @@ import { Benefits } from "@/sections/benefits";
 import { ContactUs } from "@/sections/contactUs";
 import { Hero } from "@/sections/hero";
 import { MissionAndValues } from "@/sections/mission-and-values";
+import { Projects } from "@/sections/projects";
 import { Services } from "@/sections/services";
 import { Steps } from "@/sections/steps";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="pt-16">
         <Hero />
         <About />
+        <Projects />
         <MissionAndValues />
         <Benefits />
         <Services />
