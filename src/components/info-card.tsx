@@ -40,7 +40,7 @@ export function InfoCard({
     >
       <div
         className={`
-        ${icon.bg && "w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center"}
+        ${icon.bg && "p-3 w-fit rounded-full bg-primary/20 flex items-center justify-center"}
         ${icon.alignment === "center" && "mx-auto w-fit h-fit"}
         text-4xl text-primary
         `}

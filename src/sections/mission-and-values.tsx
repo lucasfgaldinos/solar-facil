@@ -1,7 +1,8 @@
 "use client";
 import {
   ArrowRightIcon,
-  ListChecksIcon,
+  CheckCircleIcon,
+  EyeIcon,
   RocketIcon,
 } from "@phosphor-icons/react";
 import type { ReactNode } from "react";
@@ -24,7 +25,13 @@ const missionAndValuesData: MissionAndValueDataProps[] = [
       "Tornar a energia solar acessível, impulsionando a transição energética com soluções inovadoras e de alta qualidade.",
   },
   {
-    phosphorIcon: <ListChecksIcon />,
+    phosphorIcon: <EyeIcon />,
+    title: "Visão",
+    description:
+      "Compromisso, Sustentabilidade, Inovação e Transparência com nossos clientes e parceiros.",
+  },
+  {
+    phosphorIcon: <CheckCircleIcon />,
     title: "Valores",
     description:
       "Compromisso, Sustentabilidade, Inovação e Transparência com nossos clientes e parceiros.",
@@ -34,43 +41,43 @@ const missionAndValuesData: MissionAndValueDataProps[] = [
 export function MissionAndValues() {
   return (
     <Section>
-      <div className="flex flex-col gap-8 md:grid md:grid-cols-2">
-        <div>
-          <Title alignment="left">Nossa Missão e Valores</Title>
-          <p className="py-6 md:text-lg">
-            Nosso compromisso vai além da instalação de painéis solares.
-            Buscamos um futuro mais sustentável para todos.
-          </p>
-          <LearnMoreLink alignment="left" href="/">
-            Conheça nossa cultura <ArrowRightIcon size={16} />
-          </LearnMoreLink>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {missionAndValuesData.length > 0 &&
-            missionAndValuesData.map((item) => (
-              <InfoCard
-                key={item.title}
-                icon={{
-                  content: item.phosphorIcon,
-                  alignment: "left",
-                  bg: false,
-                }}
-                name={{
-                  content: item.title,
-                  alignment: "left",
-                  size: "md",
-                }}
-                description={{
-                  content: item.description,
-                  alignment: "left",
-                  size: "sm",
-                }}
-                bg="secondary"
-              />
-            ))}
-        </div>
+      <div>
+        <Title>Nossa Essência</Title>
+        <p className="my-6 max-w-3xl mx-auto text-text text-center">
+          Nosso compromisso vai além da instalação de painéis solares.
+          <br />
+          Buscamos um futuro mais sustentável para todos.
+        </p>
       </div>
+
+      <div className="flex gap-4 pb-6">
+        {missionAndValuesData.length > 0 &&
+          missionAndValuesData.map((item) => (
+            <InfoCard
+              key={item.title}
+              icon={{
+                content: item.phosphorIcon,
+                alignment: "left",
+                bg: true,
+              }}
+              name={{
+                content: item.title,
+                alignment: "left",
+                size: "md",
+              }}
+              description={{
+                content: item.description,
+                alignment: "left",
+                size: "sm",
+              }}
+              bg="secondary"
+            />
+          ))}
+      </div>
+
+      <LearnMoreLink alignment="center" href="/">
+        Conheça um pouco mais sobre nossa cultura <ArrowRightIcon size={16} />
+      </LearnMoreLink>
     </Section>
   );
 }
