@@ -15,7 +15,7 @@ export function Section({
       {...props}
       className={`${bgColor === "primary" ? "bg-bg" : bgColor === "green" ? "bg-primary/15" : "bg-bg-secondary"} w-full`}
     >
-      <div className="max-w-7xl mx-auto w-full px-4 py-10 md:px-8 md:py-20">
+      <div className="max-w-7xl mx-auto w-full px-5 py-16 md:px-8 md:py-26">
         {children}
       </div>
     </section>
