@@ -1,3 +1,4 @@
+import { Button } from "@/components/button";
 import { ImageCard } from "@/components/imageCard";
 import { Section } from "@/components/section";
 import { Title } from "@/components/title";
@@ -16,6 +17,10 @@ export function Projects() {
         {projects.map((item) => (
           <ImageCard key={item.name} img={item.img} title={item.name} />
         ))}
+      </div>
+
+      <div className="pt-12 mx-auto flex justify-center">
+        <Button>Veja Todos os Projetos</Button>
       </div>
     </Section>
   );
