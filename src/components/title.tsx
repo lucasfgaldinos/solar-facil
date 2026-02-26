@@ -13,7 +13,7 @@ export function Title({
   return (
     <h2
       {...props}
-      className={`${alignment === "center" ? "text-center" : "text-left"} text-2xl md:text-3xl text-text font-extrabold`}
+      className={`${alignment === "center" ? "text-center" : "text-left"} text-2xl md:text-3xl text-primary font-extrabold`}
     >
       {children}
     </h2>
