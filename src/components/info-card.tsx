@@ -50,9 +50,9 @@ export function InfoCard({
 
       <p
         className={`
-        ${name.size === "md" ? "text-lg md:text-xl" : "text-xl md:text-2xl"}
+        ${name.size === "md" ? "text-lg" : "text-xl"}
         ${name.alignment === "center" && "text-center"}
-        text-text font-bold
+        text-text font-semibold
         `}
       >
         {name.content}
@@ -62,6 +62,7 @@ export function InfoCard({
         className={`
         ${description.size === "sm" ? "text-sm" : "text-base"}
         ${description.alignment === "center" && "text-center"}
+        text-text-secondary font-semibold
         `}
       >
         {description.content}

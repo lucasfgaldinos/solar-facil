@@ -12,10 +12,10 @@ export function Hero() {
       >
         <div className="absolute left-0 top-0 bg-black/60 h-[80dvh] w-full rounded-xl content-end">
           <div className="p-6 md:p-10 flex flex-col gap-6">
-            <h1 className="font-black text-3xl leading-9 md:text-5xl text-bg max-w-lg md:leading-14">
+            <h1 className="font-semibold text-3xl leading-9 md:text-5xl text-bg max-w-lg md:leading-14">
               Energia Solar Fácil e Acessível
             </h1>
-            <p className="text-bg max-w-2xl">
+            <p className="text-bg max-w-2xl font-semibold">
               Reduza sua conta de luz com uma fonte de energia limpa e
               renovável. Peça uma avaliação gratuita e comece a economizar.
             </p>

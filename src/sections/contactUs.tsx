@@ -11,7 +11,7 @@ export function ContactUs() {
       <div className="mt-6 md:mt-10 flex flex-col">
         <div className="w-fit mx-auto flex flex-col gap-10 pb-8">
           <div>
-            <p className="text-primary flex items-center gap-2 text-lg font-bold">
+            <p className="text-primary flex items-center gap-2 text-lg font-semibold">
               <MapPinIcon weight="fill" size={22} /> Endereço
             </p>
 
@@ -21,7 +21,7 @@ export function ContactUs() {
           </div>
 
           <div>
-            <p className="text-primary flex items-center gap-2 text-lg font-bold">
+            <p className="text-primary flex items-center gap-2 text-lg font-semibold">
               <PhoneIcon weight="fill" size={22} /> Telefone
             </p>
 
@@ -29,7 +29,7 @@ export function ContactUs() {
           </div>
 
           <div>
-            <p className="text-primary flex items-center gap-2 text-lg font-bold">
+            <p className="text-primary flex items-center gap-2 text-lg font-semibold">
               <ClockIcon weight="fill" size={22} /> Horário de Atendimento
             </p>
 

@@ -63,11 +63,11 @@ export function Steps() {
               <hr className="text-text-secondary hidden lg:block" />
 
               <div className="px-4 py-4 lg:py-2">
-                <p className="text-text font-bold text-lg text-center">
+                <p className="text-text font-semibold text-lg text-center">
                   {`${stepNumber}. ${title}`}
                 </p>
 
-                <p className="text-text-secondary text-center mt-1 font-medium">
+                <p className="text-text-secondary text-center text-sm mt-1 font-semibold">
                   {description}
                 </p>
 

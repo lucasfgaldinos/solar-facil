@@ -14,10 +14,10 @@ export function CallToAction({
 }: CallToActionProps) {
   return (
     <div {...props}>
-      <Section bgColor="green">
+      <Section bgColor="blue">
         <Title>{title}</Title>
 
-        <p className="text-text-secondary text-center font-medium mt-3 mb-6">
+        <p className="text-text text-center font-semibold my-8">
           {description}
         </p>
 

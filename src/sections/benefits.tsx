@@ -25,7 +25,7 @@ export function Benefits() {
             alignment: "center",
             content:
               "Reduza significativamente seus gastos mensais com eletricidade.",
-            size: "md",
+            size: "sm",
           }}
           bg="primary"
           icon={{
@@ -46,7 +46,7 @@ export function Benefits() {
             alignment: "center",
             content:
               "Contribua para um planeta mais limpo utilizando uma fonte de energia 100% renovável.",
-            size: "md",
+            size: "sm",
           }}
           bg="primary"
           icon={{
@@ -67,7 +67,7 @@ export function Benefits() {
             alignment: "center",
             content:
               "Aumente o valor de mercado do seu imóvel com um sistema de energia moderno.",
-            size: "md",
+            size: "sm",
           }}
           bg="primary"
           icon={{

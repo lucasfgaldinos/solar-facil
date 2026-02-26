@@ -64,7 +64,7 @@ export function ImageCard({ img, title, description }: ImageCardProps) {
         <div className="absolute inset-0 bg-dark-bg/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
         <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <h3 className="text-bg text-lg font-semibold">{title}</h3>
+          <h3 className="text-bg font-semibold">{title}</h3>
           {description && (
             <p className="text-text-secondary text-sm mt-1">{description}</p>
           )}
@@ -103,7 +103,7 @@ export function ImageCard({ img, title, description }: ImageCardProps) {
               priority
             />
 
-            {/* Título acessível (invisível visualmente) */}
+            {/* Título acessível */}
             <span id="image-modal-title" className="sr-only">
               {title}
             </span>
