@@ -7,10 +7,10 @@ export function Hero() {
   return (
     <Section>
       <div
-        className="h-[80dvh] rounded-xl bg-cover bg-bottom bg-no-repeat relative"
+        className="h-[80vh] rounded-xl bg-cover bg-bottom bg-no-repeat relative"
         style={{ backgroundImage: `url(${banner.src})` }}
       >
-        <div className="absolute left-0 top-0 bg-black/60 h-[80dvh] w-full rounded-xl content-end">
+        <div className="absolute left-0 top-0 bg-black/60 h-[80vh] w-full rounded-xl content-end">
           <div className="p-6 md:p-10 flex flex-col gap-6">
             <h1 className="font-semibold text-3xl leading-9 md:text-5xl text-bg max-w-lg md:leading-14">
               Energia Solar Fácil e Acessível
