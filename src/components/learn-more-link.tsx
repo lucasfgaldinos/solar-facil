@@ -17,7 +17,7 @@ export function LearnMoreLink({
     <Link
       href={href}
       {...props}
-      className={`${alignment === "center" && "w-fit mx-auto"} text-primary font-bold flex gap-1 items-center`}
+      className={`${alignment === "center" && "w-fit mx-auto"} text-primary font-semibold flex gap-1 items-center relative after:absolute after:content-[''] after:h-0.5 after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-0 hover:after:w-full after:bg-secondary after:transition-all after:duration-800`}
     >
       <p className="text-center" style={{ display: "ruby" }}>
         {children}
