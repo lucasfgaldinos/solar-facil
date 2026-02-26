@@ -38,9 +38,9 @@ const missionAndValuesData: MissionAndValueDataProps[] = [
   },
 ];
 
-export function MissionAndValues() {
+export function Essence() {
   return (
-    <Section>
+    <Section bgColor="secondary">
       <div>
         <Title>Nossa Essência</Title>
         <p className="my-6 max-w-3xl mx-auto text-text text-center">
