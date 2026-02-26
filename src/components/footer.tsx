@@ -24,7 +24,7 @@ export function Footer() {
       username: "@solarfacil2023",
       link: "https://www.instagram.com/solarfacil2023",
       icon: InstagramLogoIcon,
-      gradient: "from-[#8a2be2] via-[#ff4fd8] to-[#ff7a00]",
+      gradient: "from-[#C12E94] via-[#E5495C] to-[#FA9F4E]",
     },
     {
       name: "Facebook",
@@ -36,7 +36,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-dark-bg w-full p-4 md:p-10">
+    <footer className="bg-bg w-full p-4 md:p-10">
       <div className="max-w-7xl mx-auto w-full">
         <div className="pb-12 block mx-auto w-fit">
           <div className="max-w-84">
@@ -46,7 +46,7 @@ export function Footer() {
               src={logo}
               alt="Logo Solar Fácil"
             />
-            <p className="text-gray font-medium text-center">
+            <p className="text-text-secondary font-medium text-center">
               Seu parceiro em energia limpa e renovável. Economize e ajude o
               planeta.
             </p>
@@ -64,7 +64,7 @@ export function Footer() {
                   href={social.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="group relative flex items-center justify-between overflow-hidden rounded-2xl px-5 py-4 backdrop-blur-md transition shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_10px_30px_rgba(0,0,0,0.15)]"
+                  className="group relative flex items-center justify-between overflow-hidden rounded-2xl px-3 py-2 md:px-5 md:py-4 backdrop-blur-md transition shadow"
                 >
                   <div
                     className={`absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-linear-to-r ${social.gradient}`}
@@ -72,7 +72,7 @@ export function Footer() {
 
                   <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-dark-bg/40" />
 
-                  <div className="relative z-10 flex items-center gap-4">
+                  <div className="relative z-10 flex items-center gap-2 md:gap-4">
                     <div
                       className={`flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br ${social.gradient}
               `}
@@ -87,7 +87,7 @@ export function Footer() {
                     </div>
 
                     <div className="flex flex-col leading-tight">
-                      <span className="text-sm text-bg/80 group-hover:text-bg transition-colors">
+                      <span className="text-xs md:text-sm text-dark-bg/80 group-hover:text-bg transition-colors">
                         {social.username}
                       </span>
                     </div>
@@ -96,7 +96,7 @@ export function Footer() {
                   <div className="relative z-10">
                     <ArrowSquareOutIcon
                       size={20}
-                      className="text-bg/80 transition-colors group-hover:text-bg"
+                      className="text-dark-bg/80 transition-colors group-hover:text-bg"
                     />
                   </div>
                 </a>
@@ -110,10 +110,10 @@ export function Footer() {
             className="max-w-sm mx-auto w-full h-px mb-6 md:mb-10"
             style={{
               background:
-                "linear-gradient(90deg, #0000, var(--color-gray), #0000)",
+                "linear-gradient(90deg, #0000, var(--color-text-secondary), #0000)",
             }}
           />
-          <p className="text-center text-gray text-xs">
+          <p className="text-center text-text-secondary text-xs font-medium">
             &copy; {currentYear} - Solar Fácil. Todos os direitos reservados.
           </p>
         </div>
