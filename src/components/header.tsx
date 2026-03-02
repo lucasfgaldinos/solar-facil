@@ -1,8 +1,7 @@
 "use client";
-import { ListIcon } from "@phosphor-icons/react";
+import { ListIcon, XIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import { useState } from "react";
-import { Button } from "./button";
 import { HeaderLink } from "./header-link";
 
 export function Header() {
@@ -32,17 +31,17 @@ export function Header() {
             <HeaderLink>Contato</HeaderLink>
           </nav>
 
-          <div className="flex gap-4 items-center">
-            <div className="hidden md:flex">
-              <Button size="sm">Solicitar Orçamento</Button>
-            </div>
-
+          <div className="flex gap-4 items-center md:hidden">
             <button
               onClick={handleMenu}
               type="button"
-              className="md:hidden h-8 w-8 cursor-pointer hover:scale-105 active:scale-100 transition"
+              className="h-8 w-8 cursor-pointer hover:scale-105 active:scale-100 transition"
             >
-              <ListIcon size={32} weight="bold" />
+              {menu === "open" ? (
+                <XIcon size={32} weight="bold" />
+              ) : (
+                <ListIcon size={32} weight="bold" />
+              )}
             </button>
           </div>
         </div>

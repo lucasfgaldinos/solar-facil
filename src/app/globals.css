@@ -10,3 +10,21 @@
   --color-dark-bg: #0d1321;
   --color-gray: #969da9;
 }
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.btn-grow {
+  animation: grow 1s ease-in-out infinite;
+}
+
+.btn-grow:hover {
+  animation-play-state: paused;
+}
