@@ -6,7 +6,6 @@ import {
   InstagramLogoIcon,
 } from "@phosphor-icons/react";
 import Image from "next/image";
-import logo from "@/assets/logo.png";
 
 type SocialCard = {
   name: string;
@@ -41,9 +40,10 @@ export function Footer() {
         <div className="pb-12 block mx-auto w-fit">
           <div className="max-w-84">
             <Image
-              width={220}
+              height={200}
+              width={300}
               className="h-auto mx-auto"
-              src={logo}
+              src="/logo.webp"
               alt="Logo Solar Fácil"
             />
             <p className="text-text-secondary font-medium text-center">

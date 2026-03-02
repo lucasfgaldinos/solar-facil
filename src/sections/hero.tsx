@@ -1,9 +1,8 @@
-import banner from "@/assets/banner.jpg";
+import banner from "@/assets/banner.webp";
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
 
 export function Hero() {
-  console.log(banner.src);
   return (
     <Section>
       <div
