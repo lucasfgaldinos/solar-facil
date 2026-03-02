@@ -31,6 +31,8 @@ export function InfoCard({
   return (
     <div
       {...props}
+      data-aos="flip-left"
+      data-aos-delay="100"
       className={`
         ${shadow && "shadow"}
         ${bg === "primary" ? "bg-bg" : "bg-bg-secondary"}

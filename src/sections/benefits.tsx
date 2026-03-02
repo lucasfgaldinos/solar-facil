@@ -10,7 +10,7 @@ import { Title } from "@/components/title";
 
 export function Benefits() {
   return (
-    <Section bgColor="secondary">
+    <Section bgColor="secondary" id="benefits">
       <Title>Benefícios da Energia Solar</Title>
 
       <div className="flex flex-col lg:flex-row gap-4 md:gap-8 mt-10">

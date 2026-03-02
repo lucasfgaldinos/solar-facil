@@ -14,7 +14,7 @@ export function HeaderLink({
   return (
     <a
       {...props}
-      className={`${variant === "light" ? "text-gray" : "text-text"} w-fit font-semibold p-1 text-sm select-none hover:text-primary active:text-primary/50 transition cursor-pointer`}
+      className={`${variant === "light" ? "text-gray" : "text-text"} w-fit font-semibold p-1 select-none hover:text-primary active:text-primary/50 transition cursor-pointer`}
     >
       {children}
     </a>

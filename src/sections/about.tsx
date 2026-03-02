@@ -4,10 +4,14 @@ import { Title } from "@/components/title";
 
 export function About() {
   return (
-    <Section bgColor="secondary">
+    <Section bgColor="secondary" id="about">
       <Title>Sobre Nós</Title>
 
-      <p className="my-6 font-semibold text-center max-w-3xl mx-auto text-text">
+      <p
+        data-aos="zoom-in-down"
+        data-aos-delay="100"
+        className="my-6 font-semibold text-center max-w-3xl mx-auto text-text"
+      >
         A Solar Fácil nasceu com a missão de democratizar o acesso à energia
         solar no Brasil. Somos especialistas em projetar e instalar sistemas
         fotovoltaicos para residências e empresas, oferecendo uma solução

@@ -40,20 +40,29 @@ export function Footer() {
         <div className="pb-12 block mx-auto w-fit">
           <div className="max-w-84">
             <Image
+              data-aos="zoom-in-down"
               height={200}
               width={300}
               className="h-auto mx-auto"
               src="/logo.webp"
               alt="Logo Solar Fácil"
             />
-            <p className="text-text-secondary font-medium text-center">
+            <p
+              data-aos="zoom-in-down"
+              data-aos-delay="100"
+              className="text-text-secondary font-medium text-center"
+            >
               Seu parceiro em energia limpa e renovável. Economize e ajude o
               planeta.
             </p>
           </div>
         </div>
 
-        <div className="pb-20 max-w-sm mx-auto">
+        <div
+          data-aos="zoom-in-down"
+          data-aos-delay="200"
+          className="pb-20 max-w-sm mx-auto"
+        >
           <div className="flex flex-col gap-4">
             {socials.map((social) => {
               const Icon = social.icon;

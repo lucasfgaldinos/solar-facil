@@ -52,6 +52,8 @@ export function ImageCard({ img, title, description }: ImageCardProps) {
         onClick={() => setOpen(true)}
         aria-label={`Abrir imagem ${title}`}
         className="group relative w-full h-60 rounded-xl overflow-hidden shadow-lg cursor-pointer text-left"
+        data-aos="flip-left"
+        data-aos-delay="100"
       >
         <Image
           src={img}

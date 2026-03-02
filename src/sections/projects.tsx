@@ -6,9 +6,13 @@ import { projects } from "@/data/projects";
 
 export function Projects() {
   return (
-    <Section>
+    <Section id="projects">
       <Title>Projetos em Destaque</Title>
-      <p className="text-center text-text font-semibold max-w-3xl mx-auto py-8">
+      <p
+        data-aos="zoom-in-down"
+        data-aos-delay="400"
+        className="text-center text-text font-semibold max-w-3xl mx-auto py-8"
+      >
         Confira alguns dos nossos projetos que estão gerando economia e
         sustentabilidade para nossos clientes.
       </p>

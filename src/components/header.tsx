@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { HeaderLink } from "./header-link";
 
-export function Header() {
+export function Header({ onScrollTo }: { onScrollTo: (id: string) => void }) {
   const [menu, setMenu] = useState<"open" | "closed">("closed");
 
   function handleMenu() {
@@ -24,11 +24,21 @@ export function Header() {
           />
 
           <nav className="hidden md:flex gap-4">
-            <HeaderLink>Home</HeaderLink>
-            <HeaderLink>Sobre</HeaderLink>
-            <HeaderLink>Projetos</HeaderLink>
-            <HeaderLink>Serviços</HeaderLink>
-            <HeaderLink>Contato</HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("hero")}>Início</HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("about")}>Sobre</HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("projects")}>
+              Projetos
+            </HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("benefits")}>
+              Benefícios
+            </HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("services")}>
+              Serviços
+            </HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("steps")}>Etapas</HeaderLink>
+            <HeaderLink onClick={() => onScrollTo("contact")}>
+              Contato
+            </HeaderLink>
           </nav>
 
           <div className="flex gap-4 items-center md:hidden">
@@ -49,11 +59,19 @@ export function Header() {
         <div
           className={`md:hidden ${menu === "open" ? "flex" : "hidden"} abolute top-50 flex flex-col items-center gap-3 border-t-2 border-gray-200 mt-4 pt-4 pb-4`}
         >
-          <HeaderLink>Home</HeaderLink>
-          <HeaderLink>Sobre</HeaderLink>
-          <HeaderLink>Projetos</HeaderLink>
-          <HeaderLink>Serviços</HeaderLink>
-          <HeaderLink>Contato</HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("hero")}>Início</HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("about")}>Sobre</HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("projects")}>
+            Projetos
+          </HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("benefits")}>
+            Benefícios
+          </HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("services")}>
+            Serviços
+          </HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("steps")}>Etapas</HeaderLink>
+          <HeaderLink onClick={() => onScrollTo("contact")}>Contato</HeaderLink>
         </div>
       </div>
     </header>

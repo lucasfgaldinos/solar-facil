@@ -10,7 +10,7 @@ import { Title } from "@/components/title";
 
 export function Services() {
   return (
-    <Section>
+    <Section id="services">
       <Title>Nossos Serviços</Title>
 
       <div className="flex flex-col lg:flex-row gap-4 md:gap-8 mt-10">
