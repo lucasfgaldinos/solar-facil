@@ -54,6 +54,7 @@ export function ImageCard({ img, title }: ImageCardProps) {
         className="group relative w-full h-60 rounded-md overflow-hidden shadow-lg cursor-pointer text-left"
       >
         <Image
+          fetchPriority="high"
           src={img}
           alt={title}
           fill

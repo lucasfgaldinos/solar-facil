@@ -21,6 +21,7 @@ export function Header({ onScrollTo }: { onScrollTo: (id: string) => void }) {
             className="h-auto"
             src="/logo.webp"
             alt="Logo Solar Fácil"
+            fetchPriority="high"
           />
 
           <nav className="hidden md:flex gap-4">
