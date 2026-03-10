@@ -14,11 +14,18 @@ export function Hero() {
             <h1
               data-aos="fade-down"
               data-aos-delay="100"
-              className="font-semibold text-3xl leading-9 md:text-5xl text-bg max-w-lg md:leading-14"
+              className="font-extrabold text-4xl leading-10 md:text-6xl text-bg max-w-lg md:leading-16"
             >
-              Energia Solar Fácil e Acessível
+              Energia{" "}
+              <span className="bg-linear-to-r from-[#FFE602] to-[#FE5E10] bg-clip-text text-transparent">
+                Solar Fácil
+              </span>{" "}
+              e <span className="text-green-500">Acessível</span>
             </h1>
-            <p data-aos="fade-down" className="text-bg max-w-2xl font-semibold">
+            <p
+              data-aos="fade-down"
+              className="text-bg max-w-2xl text-lg md:text-xl font-normal"
+            >
               Reduza sua conta de luz com uma fonte de energia limpa e
               renovável. Peça uma avaliação gratuita e comece a economizar.
             </p>

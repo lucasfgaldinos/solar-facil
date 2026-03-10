@@ -51,11 +51,7 @@ export function Steps() {
     <Section bgColor="secondary" id="steps">
       <Title>Como Funciona</Title>
 
-      <div
-        data-aos="zoom-in-down"
-        data-aos-delay="100"
-        className="flex flex-col lg:flex-row lg:flex-nowrap mt-16 items-center lg:items-start gap-4 lg:gap-0"
-      >
+      <div className="flex flex-col lg:flex-row lg:flex-nowrap mt-16 items-center lg:items-start gap-4 lg:gap-0">
         {steps
           .sort((a, b) => a.stepNumber - b.stepNumber)
           .map(({ stepNumber, icon: Icon, title, description }) => (
@@ -67,11 +63,11 @@ export function Steps() {
               <hr className="text-text-secondary hidden lg:block" />
 
               <div className="px-4 py-4 lg:py-2">
-                <p className="text-text font-semibold text-lg text-center">
+                <p className="text-text font-semibold text-lg md:text-xl text-center">
                   {`${stepNumber}. ${title}`}
                 </p>
 
-                <p className="text-text-secondary text-center text-sm mt-1 font-semibold">
+                <p className="text-text-secondary text-center md:text-lg mt-1">
                   {description}
                 </p>
 

@@ -19,13 +19,13 @@ export function Benefits() {
           name={{
             alignment: "center",
             content: "Economia na Conta",
-            size: "md",
+            size: "lg",
           }}
           description={{
             alignment: "center",
             content:
               "Reduza significativamente seus gastos mensais com eletricidade.",
-            size: "sm",
+            size: "md",
           }}
           bg="primary"
           icon={{
@@ -40,13 +40,13 @@ export function Benefits() {
           name={{
             alignment: "center",
             content: "Energia Sustentável",
-            size: "md",
+            size: "lg",
           }}
           description={{
             alignment: "center",
             content:
               "Contribua para um planeta mais limpo utilizando uma fonte de energia 100% renovável.",
-            size: "sm",
+            size: "md",
           }}
           bg="primary"
           icon={{
@@ -61,13 +61,13 @@ export function Benefits() {
           name={{
             alignment: "center",
             content: "Valorização do Imóvel",
-            size: "md",
+            size: "lg",
           }}
           description={{
             alignment: "center",
             content:
               "Aumente o valor de mercado do seu imóvel com um sistema de energia moderno.",
-            size: "sm",
+            size: "md",
           }}
           bg="primary"
           icon={{

@@ -26,7 +26,7 @@ export function Button({
       className={`
       ${width === "fit" ? "w-fit" : "w-full"}
       ${size === "lg" ? "px-7 py-3.5" : "px-4 py-2"}
-    text-text cursor-pointer rounded-full transition font-semibold hover:scale-105 active:scale-100 flex items-center gap-2 shadow btn-grow
+    text-text cursor-pointer rounded-full md:text-lg transition hover:scale-105 active:scale-100 flex items-center gap-2 shadow btn-grow
     `}
       {...props}
     >

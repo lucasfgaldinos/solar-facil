@@ -14,7 +14,7 @@ export function HeaderLink({
     <button
       type="button"
       {...props}
-      className={`${variant === "light" ? "text-gray" : "text-text"} w-fit font-semibold p-1 select-none hover:text-primary active:text-primary/50 transition cursor-pointer`}
+      className={`${variant === "light" ? "text-gray" : "text-text"} text-lg font-normal w-fit p-1 select-none hover:text-primary active:text-primary/50 transition cursor-pointer`}
     >
       {children}
     </button>

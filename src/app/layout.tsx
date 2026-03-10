@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Fustat } from "next/font/google";
-import { Footer } from "@/components/footer";
+import { Roboto } from "next/font/google";
+import { Footer } from "@/sections/footer";
 
-const fustat = Fustat({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -66,9 +66,23 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${fustat.className} antialiased`}>
+      <body className={`${roboto.className} antialiased`}>
         {children}
         <Footer />
+
+        <p className="bg-black w-full text-center text-[10px] text-gray-300 p-1">
+          Desenvolvido por{" "}
+          <b>
+            <a
+              className="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://lucasgaldinoportfolio.vercel.app/"
+            >
+              Lucas Galdino
+            </a>
+          </b>
+        </p>
       </body>
     </html>
   );

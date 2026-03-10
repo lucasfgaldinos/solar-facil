@@ -11,6 +11,7 @@ import { Projects } from "@/sections/projects";
 import { Services } from "@/sections/services";
 import { Steps } from "@/sections/steps";
 import "aos/dist/aos.css";
+import { Video } from "@/sections/video";
 
 export default function Home() {
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Video />
         <Benefits />
         <Services />
         <Steps />

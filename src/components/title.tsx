@@ -13,8 +13,7 @@ export function Title({
   return (
     <h2
       {...props}
-      data-aos="zoom-in-down"
-      className={`${alignment === "center" ? "text-center" : "text-left"} text-shadow-md text-3xl md:text-5xl text-primary font-semibold`}
+      className={`${alignment === "center" ? "text-center" : "text-left"} bg-linear-to-r from-[#04227D] via-[#0A31A5] to-[#003BEB] bg-clip-text text-transparent text-shadow-md text-3xl md:text-5xl font-semibold`}
     >
       {children}
     </h2>

@@ -12,7 +12,7 @@ export function Header({ onScrollTo }: { onScrollTo: (id: string) => void }) {
   }
 
   return (
-    <header className="z-20 w-full bg-bg fixed">
+    <header className="z-20 w-full bg-bg fixed shadow">
       <div className="max-w-7xl mx-auto w-full flex flex-col px-4">
         <div className="w-full flex justify-between items-center">
           <Image

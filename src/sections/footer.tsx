@@ -40,21 +40,12 @@ export function Footer() {
         <div className="pb-12 block mx-auto w-fit">
           <div className="max-w-84">
             <Image
-              data-aos="zoom-in-down"
               height={200}
               width={300}
               className="h-auto mx-auto"
               src="/logo.webp"
               alt="Logo Solar Fácil"
             />
-            <p
-              data-aos="zoom-in-down"
-              data-aos-delay="100"
-              className="text-text-secondary font-medium text-center"
-            >
-              Seu parceiro em energia limpa e renovável. Economize e ajude o
-              planeta.
-            </p>
           </div>
         </div>
 
@@ -122,7 +113,8 @@ export function Footer() {
                 "linear-gradient(90deg, #0000, var(--color-text-secondary), #0000)",
             }}
           />
-          <p className="text-center text-text-secondary text-xs font-medium">
+
+          <p className="text-center text-text-secondary">
             &copy; {currentYear} - Solar Fácil. Todos os direitos reservados.
           </p>
         </div>

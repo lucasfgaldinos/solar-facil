@@ -31,8 +31,6 @@ export function InfoCard({
   return (
     <div
       {...props}
-      data-aos="flip-left"
-      data-aos-delay="100"
       className={`
         ${shadow && "shadow"}
         ${bg === "primary" ? "bg-bg" : "bg-bg-secondary"}
@@ -52,7 +50,7 @@ export function InfoCard({
 
       <p
         className={`
-        ${name.size === "md" ? "text-lg" : "text-xl"}
+        ${name.size === "md" ? "text-base md:text-lg" : "text-lg md:text-xl"}
         ${name.alignment === "center" && "text-center"}
         text-text font-semibold
         `}
@@ -62,9 +60,9 @@ export function InfoCard({
 
       <p
         className={`
-        ${description.size === "sm" ? "text-sm" : "text-base"}
+        ${description.size === "sm" ? "text-sm" : "text-base md:text-lg"}
         ${description.alignment === "center" && "text-center"}
-        text-text-secondary font-semibold
+        text-text-secondary
         `}
       >
         {description.content}
