@@ -20,7 +20,7 @@ export function CallToAction({
         <p className="text-text text-center md:text-lg my-8">{description}</p>
 
         <div className="mx-auto flex justify-center">
-          <Button>Solicitar Orçamento</Button>
+          <Button>Solicitar orçamento</Button>
         </div>
       </Section>
     </div>

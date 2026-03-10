@@ -49,11 +49,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div
-          data-aos="zoom-in-down"
-          data-aos-delay="200"
-          className="pb-20 max-w-sm mx-auto"
-        >
+        <div className="pb-20 max-w-sm mx-auto">
           <div className="flex flex-col gap-4">
             {socials.map((social) => {
               const Icon = social.icon;

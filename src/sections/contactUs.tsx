@@ -6,7 +6,7 @@ import { Title } from "@/components/title";
 export function ContactUs() {
   return (
     <Section bgColor="secondary" id="contact">
-      <Title>Entre em Contato</Title>
+      <Title>Entre em contato</Title>
 
       <div className="mt-6 md:mt-10 flex flex-col">
         <div className="w-fit mx-auto flex flex-col gap-10 pb-8">

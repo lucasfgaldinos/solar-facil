@@ -29,7 +29,7 @@ export function Hero() {
               Reduza sua conta de luz com uma fonte de energia limpa e
               renovável. Peça uma avaliação gratuita e comece a economizar.
             </p>
-            <Button size="lg">Peça Seu Orçamento</Button>
+            <Button size="lg">Peça seu orçamento</Button>
           </div>
         </div>
       </div>

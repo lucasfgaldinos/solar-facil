@@ -49,7 +49,7 @@ const steps: Step[] = [
 export function Steps() {
   return (
     <Section bgColor="secondary" id="steps">
-      <Title>Como Funciona</Title>
+      <Title>Como funciona</Title>
 
       <div className="flex flex-col lg:flex-row lg:flex-nowrap mt-16 items-center lg:items-start gap-4 lg:gap-0">
         {steps

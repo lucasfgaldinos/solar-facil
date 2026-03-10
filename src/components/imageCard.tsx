@@ -71,8 +71,7 @@ export function ImageCard({ img, title }: ImageCardProps) {
             type="button"
             onClick={() => setOpen(false)}
             aria-label="Fechar imagem"
-            className="
-              cursor-pointer absolute right-[10%] top-[5%] rounded p-2 bg-bg/10 backdrop-blur-md text-bg text-sm flex items-center justify-center hover:bg-bg/20 transition focus:outline-none focus:ring-2 focus:ring-bg border-2 border-bg/50 active:scale-90"
+            className="z-100 cursor-pointer absolute right-[10%] top-[5%] rounded p-2 bg-bg/10 backdrop-blur-md text-bg text-sm flex items-center justify-center hover:bg-bg/20 transition focus:outline-none focus:ring-2 focus:ring-bg border-2 border-bg/50 active:scale-90"
           >
             <XIcon size={30} />
           </button>

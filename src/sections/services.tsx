@@ -11,14 +11,14 @@ import { Title } from "@/components/title";
 export function Services() {
   return (
     <Section id="services">
-      <Title>Nossos Serviços</Title>
+      <Title>Nossos serviços</Title>
 
       <div className="flex flex-col lg:flex-row gap-4 md:gap-8 mt-10">
         {/* Primeiro card */}
         <InfoCard
           name={{
             alignment: "center",
-            content: "Instalação Residencial",
+            content: "Instalação residencial",
             size: "lg",
           }}
           description={{
@@ -39,13 +39,13 @@ export function Services() {
         <InfoCard
           name={{
             alignment: "center",
-            content: "Instalação Comercial",
+            content: "Instalação comercial",
             size: "lg",
           }}
           description={{
             alignment: "center",
             content:
-              "Soluções para empresas de todos os tamanhos que buscam reduzir custos operacionais e ser mais sutentáveis.",
+              "Soluções para empresas de todos os tamanhos que buscam reduzir custos operacionais e ser mais sustentáveis.",
             size: "md",
           }}
           bg="secondary"
@@ -60,7 +60,7 @@ export function Services() {
         <InfoCard
           name={{
             alignment: "center",
-            content: "Manutenção e Suporte",
+            content: "Manutenção e suporte",
             size: "lg",
           }}
           description={{

@@ -11,14 +11,14 @@ import { Title } from "@/components/title";
 export function Benefits() {
   return (
     <Section bgColor="secondary" id="benefits">
-      <Title>Benefícios da Energia Solar</Title>
+      <Title>Benefícios da energia solar</Title>
 
       <div className="flex flex-col lg:flex-row gap-4 md:gap-8 mt-10">
         {/* Primeiro card */}
         <InfoCard
           name={{
             alignment: "center",
-            content: "Economia na Conta",
+            content: "Economia na conta",
             size: "lg",
           }}
           description={{
@@ -39,7 +39,7 @@ export function Benefits() {
         <InfoCard
           name={{
             alignment: "center",
-            content: "Energia Sustentável",
+            content: "Energia sustentável",
             size: "lg",
           }}
           description={{
@@ -60,7 +60,7 @@ export function Benefits() {
         <InfoCard
           name={{
             alignment: "center",
-            content: "Valorização do Imóvel",
+            content: "Valorização do imóvel",
             size: "lg",
           }}
           description={{
