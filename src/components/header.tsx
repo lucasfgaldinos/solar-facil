@@ -43,6 +43,7 @@ export function Header({ onScrollTo }: { onScrollTo: (id: string) => void }) {
 
           <div className="flex gap-4 items-center md:hidden">
             <button
+              aria-label="Abrir/fechar menu de links"
               onClick={handleMenu}
               type="button"
               className="h-8 w-8 cursor-pointer hover:scale-105 active:scale-100 transition"

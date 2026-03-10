@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from "react";
 
-type HeaderLinkProps = ComponentProps<"a"> & {
+type HeaderLinkProps = ComponentProps<"button"> & {
   children: ReactNode;
   variant?: "light" | "dark";
 };
@@ -8,15 +8,15 @@ type HeaderLinkProps = ComponentProps<"a"> & {
 export function HeaderLink({
   children,
   variant = "dark",
-  href,
   ...props
 }: HeaderLinkProps) {
   return (
-    <a
+    <button
+      type="button"
       {...props}
       className={`${variant === "light" ? "text-gray" : "text-text"} w-fit font-semibold p-1 select-none hover:text-primary active:text-primary/50 transition cursor-pointer`}
     >
       {children}
-    </a>
+    </button>
   );
 }
