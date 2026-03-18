@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Solar Fácil",
+  title: "Solar Fácil - Instalação de Energia Fotovoltaica",
   description:
     "A Solar Fácil oferece soluções completas em energia solar fotovoltaica. Instalação de placas solares, manutenção e consultoria para reduzir sua conta de luz e gerar energia sustentável.",
   keywords: [
