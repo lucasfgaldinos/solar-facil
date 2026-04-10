@@ -1,17 +1,15 @@
 # ☀️ Solar Fácil - Landing Page
 
-Landing page desenvolvida para a Solar Fácil com foco em **performance, SEO e escalabilidade**, utilizando tecnologias modernas do ecossistema front-end.
+Landing page desenvolvida para a Solar Fácil com foco em **performance, SEO e escalabilidade**, utilizando React, Next.js, TypeScript e Tailwind CSS.
 
 ---
 
-## 🚀 Demonstração
-
-🔗 Acesse o projeto:  
+🔗 Acesse o site:  
 https://solarfacil.vercel.app/
 
 ---
 
-## 🎥 Preview do Projeto
+## 📷 Imagens
 
 ![Print 1](./docs/readme-imgs/img1.webp)
 ![Print 2](./docs/readme-imgs/img2.webp)
@@ -33,6 +31,7 @@ O foco foi criar uma aplicação:
 
 ## 🛠 Tecnologias Utilizadas
 
+- **React**
 - **Next.js**
 - **TypeScript**
 - **Tailwind CSS**
